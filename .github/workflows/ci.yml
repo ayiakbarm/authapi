@@ -18,9 +18,9 @@ jobs:
       postgres:
         image: postgres
         env:
-          PGUSER: postgres
-          PGPASSWORD: 'Desember2612'
-          PGDATABASE: authapi_test
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: Desember2612
+          POSTGRES_DB: authapi_test
 
         options: >-
           --health-cmd pg_isready
@@ -48,7 +48,7 @@ jobs:
           PGHOST: localhost
           PGPORT: 5432
           PGUSER: postgres
-          PGPASSWORD: 'Desember2612'
+          PGPASSWORD: Desember2612
           PGDATABASE: authapi_test
           ACCESS_TOKEN_KEY: secret
           REFRESH_TOKEN_KEY: terces
